@@ -1,0 +1,351 @@
+/* Globals */
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+.header{
+    background-color: #0e0d0d;
+    border-bottom: 2px solid #ca9fca;
+    
+}
+
+.header__contenido{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 94px;
+    text-align: center;
+    
+}
+
+.header__btn{
+    display: inline-block;
+    color: #F5F5F5;
+    background-color: #000000;
+    border: 1px solid #F5F5F5;
+    border-radius: 4px;
+    font-size: 21px;
+    font-weight: 600;
+    width: 180px;
+    height: 54px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero */
+.hero{
+    background-color: #000000;
+    background-image: url('../img/HeroBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.hero__contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    height: 800px;
+}
+
+.hero__texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+Link .hero__player{
+    max-width: 40%;
+    cursor: pointer;
+}
+
+.hero__categoria{
+    display: inline-block;
+    background-color: #ca9fca;
+    color: #F5F5F5;
+    font-size: 60px;
+    font-weight: 400;
+    width: 296px;
+    height: 92;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero__titulo{
+    color: #F5F5F5;
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.hero__descripcion{
+    color: #F5F5F5;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+@media screen and (max-width: 720px) {
+    .hero__contenido{
+        height: 600px;
+    }
+}
+
+/* Main - Categorias Lista videos */
+.sr-only{
+    display: none;
+}
+
+.categorias{
+    background-color: #000000;
+    padding: 20px 0px;
+}
+
+.categorias__titulo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.categorias__nombre{
+    color: #F5F5F5;
+    font-size: 35px;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.categorias__descripcion{
+    color: #F5F5F5;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.categorias__listavideos{
+    display:flex;
+    gap: 20px;
+    padding: 10px 0px;
+    overflow-x: auto;
+}
+
+.categorias__listavideos::-webkit-scrollbar{
+    width: 5px;
+}
+
+.categorias__listavideos::-webkit-scrollbar-thumb{
+    background: #ca9fca;
+}
+
+
+/* Videocard */
+.videocard{
+    min-width: 436px;
+    min-height: 264px;
+    max-width: 432px;
+    max-height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.videocard img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #ca9fca;
+    padding-bottom: 60px;
+    margin-top: 40px;
+}
+
+
+/* 404 */
+.error{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error__mensaje{
+    border: 4px solid #ca9fca;
+    padding: 30px;
+    text-align: center;
+}
+
+.error h1{
+   font-size: 80px;
+}
+
+.error p{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+/* NUevo Video y Nueva Categoria*/
+body{
+    background-color: #000000;
+}
+
+.nuevovideo{
+    background-color: #000000;
+    padding-top: 40px;
+}
+
+.nuevovideo__titulo{
+    color: #ca9fca;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.inputbackground{
+    background-color: #53585D;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.form__input{
+    margin-top: 40px;
+}
+
+.form__label{
+    color: #E5E5E5;
+    display: block;
+    padding: 10px 0px 0px 10px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.form__input input, select, textarea{
+    color: #E5E5E5;
+    background-color: #ca9fca;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    width: 100%;
+    border-bottom: 2px solid #53585D;
+    border-radius: 0 0 4px 4px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.form__input input:focus {
+    border-bottom:2px solid #ca9fca;
+   
+}
+
+.form__input select:focus {
+    border-bottom:2px solid #ca9fca;
+   
+}
+
+.form__input textarea:focus {
+    border-bottom: 0;
+    border-bottom:2px solid #ca9fca;
+   
+}
+
+.form__mensaje{
+    color:#0d0b0b;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 10px;
+}
+
+
+/* Nuevo Video Botones */
+.barra__botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+.barra__botones .botones {
+    margin-top: 0px;
+}
+
+.boton__nuevacategoria{
+    color: #ffffff;
+    background: #ca9fca;
+    font-size: 21px;
+    font-weight: 600;
+    width: 254px;
+    height: 54px;
+    border-radius: 4px;
+    border: none;
+}
+
+
+
+/* Nueva categoria Botones */
+
+.botones{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+
+/* Tabla */
+table{
+    border-collapse: collapse;
+    border: 4px solid #ca9fca;
+    color: #F5F5F5;
+    width: 100%;
+    margin: 20px 0px 80px 0px 
+}
+
+table thead td {
+    padding: 5px;
+    font-size: 35px;
+    font-weight: 400;
+    border: 4px solid #ca9fca;
+}
+
+table tbody td {
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+table tbody Link {
+    cursor: pointer;
+}
+
+.table__editar, .table__remover{
+    text-align: center;
+}
+
